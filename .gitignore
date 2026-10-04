@@ -1,0 +1,7 @@
+figures/
+results_ASPC_NEPC/
+logs/
+.Rhistory
+.Rproj.user/
+.DS_Store
+__pycache__/
