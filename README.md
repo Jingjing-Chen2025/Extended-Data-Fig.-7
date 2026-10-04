@@ -40,9 +40,11 @@ Two differences, both cosmetic, both worth knowing before you re-run this:
 
 1. **The subtitle differs.** `R/04_abundance_proximity.R` writes *"ASPC/EPI_CA/NE_CA use pixel-level corrected
    calls; blank controls are audit only"*. The panel in the figure reads *"all available slides; each panel
-   translated to its own origin; shared mm scale"*. No file on this machine contains the second wording, so it
-   was changed downstream of the script. The title, facet labels (`GROUP | slide_id`), populations and colours
-   are identical.
+   translated to its own origin; shared mm scale"*. No R source file under the project or manuscript trees
+   contains that second wording — checked against a control string from the same script, which does match, so
+   the search is known to work. It was therefore changed downstream of the script, in the layout step or in a
+   copy that is not on this machine. The search covered `.R` files only, not every file type. The title, facet
+   labels (`GROUP | slide_id`), populations and colours are identical.
 2. **The legend has five entries in the figure** (ASPC, EPI_CA, NE_CA, Multi, Other) where the script defines
    eight, the extra three being the `*_not_callable` audit levels. Those levels are dropped in the published
    panel.
